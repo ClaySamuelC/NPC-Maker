@@ -1,0 +1,6 @@
+.characterSheet {
+  margin-block-start: 3em;
+  padding-inline-start: 0px;
+  display: flex;
+  flex-flow: column nowrap;
+}

@@ -1,0 +1,23 @@
+.characterRow {
+  text-align: center;
+  border: 1px solid black;
+  list-style-type: none;
+  margin-right: 5%;
+  margin-left: 5%;
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.traitTitle {
+  text-align: left;
+  padding-left: 1em;
+  flex: 1 1 0%;
+  border-right: 1px solid black;
+}
+
+.traitDescription {
+  text-align: left;
+  padding-left: 1em;
+  flex: 1 1 0%;
+}
