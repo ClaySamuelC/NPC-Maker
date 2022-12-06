@@ -3,3 +3,22 @@
   padding-left: 1em;
   flex: 1 1 0%;
 }
+
+.arrowButton {
+  background-color: transparent;
+
+  height: 12px;
+  width: 12px;
+}
+
+.arrowButtonUp {
+  border-left: 1px solid #d1d5db;
+  border-top: 1px solid #d1d5db;
+  transform: translateY(25%) rotate(45deg);
+}
+
+.arrowButtonDown {
+  border-bottom: 1px solid #d1d5db;
+  border-right: 1px solid #d1d5db;
+  transform: translateY(-25%) rotate(45deg);
+}
