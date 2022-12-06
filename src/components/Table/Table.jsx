@@ -21,6 +21,7 @@ const Table = ({ table }) => {
         {table.values.map((el, i) => {return (
           <li className="tableRow" key={i}>
             <div className="tableItemName">{el.name}</div>
+            
             <Weight row={rows[i]} setWeight={handleUpdateRows}/>
           </li>
         )})}
