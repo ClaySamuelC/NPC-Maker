@@ -1,5 +1,5 @@
 import React from 'react'
-import {rollTable} from '../roller.js';
+import {rollTable} from '../../roller.js';
 import './Trait.css';
 
 const Trait = ({ table }) => {

@@ -1,0 +1,14 @@
+.banner {
+  background-color: turquoise;
+  padding: 1em;
+  width: 20%;
+}
+
+.title {
+  text-align: center;
+}
+
+.redirects {
+  display: flex;
+  flex-direction: column;
+}

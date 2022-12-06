@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Weight from './Weight.jsx';
+import Weight from '../Weight/Weight.jsx';
 import './Table.css';
 
 const Table = ({ table }) => {

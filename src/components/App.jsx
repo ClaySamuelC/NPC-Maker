@@ -2,19 +2,16 @@ import React from 'react'
 
 import './App.css';
 import {tables} from '../dict.js';
-import Trait from './Trait.jsx';
-import Table from './Table.jsx';
+import Trait from './Trait/Trait.jsx';
+import Table from './Table/Table.jsx';
+import Banner from './Banner/Banner.jsx';
 
 const App = () => {
   return (
-    <div className="App">
-      <Table table={tables[0]}/>
+    <div className="app">
+      <Banner />
 
-      <ul className="characterSheet">
-        {tables.map((table, i) => {
-          return <Trait table={table} key={i} />
-        })}
-      </ul>
+      <Table table={tables[0]}/>
     </div>
   );
 };
