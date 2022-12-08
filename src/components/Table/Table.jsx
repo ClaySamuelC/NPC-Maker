@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Weight from '../Weight/Weight.jsx';
 import './Table.css';
 
@@ -6,24 +6,20 @@ const Table = ({ table }) => {
   const [rows, setRows] = useState(table.values);
 
   const handleUpdateRows = (name, updatedRow) => {
-    const updatedRows = rows.map((row) =>
+    setRows(rows.map((row) =>
       row.name === name ? updatedRow : row
-    );
-
-    setRows(updatedRows);
+    ));
   };
+
+  useEffect(() => setRows(table.values), [table]);
 
   return (
     <div className="table">
       <div className="tableTitle">{table.title}</div>
       
       <ul className="tableContainer">
-        {table.values.map((el, i) => {return (
-          <li className="tableRow" key={i}>
-            <div className="tableItemName">{el.name}</div>
-            
-            <Weight row={rows[i]} setWeight={handleUpdateRows}/>
-          </li>
+        {rows.map((el, i) => {return (
+          <Weight key={i} row={rows[i]} setWeight={handleUpdateRows}/>
         )})}
       </ul>
 

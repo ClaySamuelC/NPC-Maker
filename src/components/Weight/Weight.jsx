@@ -12,13 +12,17 @@ const Weight = ({row, setWeight}) => {
   };
 
   return (
-    <div className="weightContainer">
-      <div className="arrowButton arrowButtonUp" onClick={() => changeWeight(1)}/>
-      
-      <div className="weightValue">{row.weight}</div>
+    <li className="tableRow">
+      <div className="weightName">{row.name}</div>
 
-      <div className="arrowButton arrowButtonDown" onClick={() => changeWeight(-1)} />
-    </div>
+      <div className="weightContainer">
+        <div className="arrowButton arrowButtonUp" onClick={() => changeWeight(1)}/>
+        
+        <div className="weightValue">{row.weight}</div>
+
+        <div className="arrowButton arrowButtonDown" onClick={() => changeWeight(-1)} />
+      </div>
+    </li>
   )
 }
 

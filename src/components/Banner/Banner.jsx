@@ -1,15 +1,23 @@
 import React from 'react';
 import './Banner.css';
+import {tables} from '../../dict.js';
 
-const Banner = () => {
+const Banner = ({setTable}) => {
   return (
     <div className="banner">
       <h1 className="title">NPC Maker</h1>
 
-      <div className="redirects">
-        <button>Characters</button>
-        <button>Tables</button>
-        <button>Create a Character</button>
+      <div className="contentTypes">
+        <div className="contentType">Characters</div>
+        <div className="tables">
+          <div>Tables</div>
+          {tables.map((el, i) => {
+            return (
+              <button className="tableTitle" key={i} onClick={() => setTable(el)}>{el.title}</button>
+            )
+          })}
+        </div>
+        <div className="contentType">Create a Character</div>
       </div>
     </div>
   );

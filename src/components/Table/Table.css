@@ -5,23 +5,3 @@
 .tableContainer {
   display: flex column;
 }
-
-.tableRow {
-  border: 1px solid black;
-  list-style-type: none;
-  margin-right: 5%;
-  margin-left: 5%;
-  display: flex;
-  justify-content: space-between;
-  width: 5 em;
-  align-items: stretch;
-}
-
-.tableItemName {
-  text-align: left;
-  padding-left: 1em;
-  flex: 1 1 0%;
-  border-right: 1px solid black;
-  display: flex;
-  align-items: center;
-}

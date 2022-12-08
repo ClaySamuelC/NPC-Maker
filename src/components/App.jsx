@@ -1,17 +1,18 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 import './App.css';
 import {tables} from '../dict.js';
-import Trait from './Trait/Trait.jsx';
 import Table from './Table/Table.jsx';
 import Banner from './Banner/Banner.jsx';
 
 const App = () => {
+  const [currentTable, setCurrentTable] = useState(tables[0]);
+  
   return (
     <div className="app">
-      <Banner />
+      <Banner setTable={setCurrentTable} />
 
-      <Table table={tables[0]}/>
+      <Table table={currentTable} />
     </div>
   );
 };
