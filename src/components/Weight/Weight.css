@@ -1,8 +1,6 @@
 .tableRow {
   border: 1px solid black;
   list-style-type: none;
-  margin-right: 5%;
-  margin-left: 5%;
   display: flex;
   justify-content: space-between;
   width: 5 em;

@@ -12,7 +12,7 @@ const Weight = ({row, setWeight}) => {
   };
 
   return (
-    <li className="tableRow">
+    <div className="tableRow">
       <div className="weightName">{row.name}</div>
 
       <div className="weightContainer">
@@ -22,7 +22,7 @@ const Weight = ({row, setWeight}) => {
 
         <div className="arrowButton arrowButtonDown" onClick={() => changeWeight(-1)} />
       </div>
-    </li>
+    </div>
   )
 }
 

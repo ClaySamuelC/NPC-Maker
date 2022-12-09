@@ -1,0 +1,22 @@
+.characterSheet {
+  margin: 1em;
+  padding-inline-start: 0px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.characterTrait {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.characterTraitTitle {
+  background-color: green;
+  width: 160px;
+}
+
+.characterTraitValue {
+  background-color: red;
+  width: 190px;
+}

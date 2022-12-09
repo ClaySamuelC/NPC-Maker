@@ -3,7 +3,7 @@
   width: 20%;
 }
 
-.title {
+.bannerTitle {
   text-align: center;
 }
 
@@ -17,6 +17,21 @@
   flex-direction: column;
 }
 
-.tableTitle {
-  margin-left: 1em;
+.tableButton {
+  margin: 1px 0px 1px 0px;
+  padding: 4em 2em 4em 2em;
+  background: aqua;
+  color: inherit;
+  border: solid black;
+  border-radius: 10px;
+  padding: 0;
+  font: inherit;
+  cursor: poitner;
+  outline: inherit;
+}
+
+.characterCreation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

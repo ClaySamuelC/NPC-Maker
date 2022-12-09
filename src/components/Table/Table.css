@@ -1,7 +1,20 @@
 .table {
+  border: solid 1px;
+  border-color: black;
   width: 40%;
+  padding: 1em;
+}
+
+.tableHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .tableContainer {
   display: flex column;
+}
+
+.tableTitle {
+  margin-left: 0em;
 }

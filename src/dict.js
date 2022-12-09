@@ -1,6 +1,6 @@
 export const tables = [
   {
-    title: 'race',
+    title: 'Race',
     diceValue: 112,
     values: [
       {
@@ -74,7 +74,7 @@ export const tables = [
     ]
   },
   {
-    title: 'gender',
+    title: 'Gender',
     diceValue: 2,
     values: [
       {
@@ -88,7 +88,7 @@ export const tables = [
     ]
   },
   {
-    title: 'alignment',
+    title: 'Alignment',
     diceValue: 20,
     values: [
       {
@@ -130,7 +130,7 @@ export const tables = [
     ]
   },
   {
-    title: 'class',
+    title: 'Class',
     diceValue: 12,
     values: [
       {
@@ -184,7 +184,7 @@ export const tables = [
     ]
   },
   {
-    title: 'profession',
+    title: 'Profession',
     diceValue: 50,
     values: [
       {
@@ -390,7 +390,7 @@ export const tables = [
     ]
   },
   {
-    title: 'level',
+    title: 'Level',
     diceValue: 10,
     values: [
       {
@@ -408,7 +408,7 @@ export const tables = [
     ]
   },
   {
-    title: 'disposition',
+    title: 'Disposition',
     diceValue: 100,
     values: [
       {

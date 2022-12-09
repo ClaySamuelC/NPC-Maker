@@ -15,13 +15,16 @@ const Table = ({ table }) => {
 
   return (
     <div className="table">
-      <div className="tableTitle">{table.title}</div>
-      
-      <ul className="tableContainer">
-        {rows.map((el, i) => {return (
-          <Weight key={i} row={rows[i]} setWeight={handleUpdateRows}/>
-        )})}
-      </ul>
+      <div className="tableHeader">
+        <div className="tableTitle">{table.title}</div>
+        <div className="tableTotal">Size: {table.diceValue}</div>
+      </div>
+
+      <div className="tableContainer">
+      {rows.map((el, i) => {return (
+        <Weight key={i} row={rows[i]} setWeight={handleUpdateRows}/>
+      )})}
+      </div>
 
       <button className="saveButton">Save</button>
     </div>
